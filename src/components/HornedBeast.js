@@ -11,7 +11,7 @@ class HornedBeast extends React.Component {
       <article>
         <h2>Horned Beast: {name}</h2>
         <div>
-        <ImageComponent imageUrl={imageUrl} altText={altText} title={title}/>
+        <ImgComp imageUrl={imageUrl} altText={altText} title={title}/>
         </div>
 
         <p>Description: {description}</p>
