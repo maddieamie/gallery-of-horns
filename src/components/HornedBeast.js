@@ -1,17 +1,17 @@
 import React from 'react';
-
+import './HornedBeast.css';
 import ImgComp from './ImgComp.js';
 
 class HornedBeast extends React.Component {
   render() {
 
-    const { imageUrl, altText, title , name, description, horns} = this.props;
+    const { imageURL, idx, title , description, keyword, horns} = this.props;
  
     return (
-      <article>
-        <h2>Horned Beast: {name}</h2>
+      <article className="HornedBeast">
+        <h2>Horned Beast: {title}</h2>
         <div>
-        <ImgComp imageUrl={imageUrl} altText={altText} title={title}/>
+        <img src={imageURL} alt={keyword} title={title} idx={idx}/>
         </div>
 
         <p>Description: {description}</p>

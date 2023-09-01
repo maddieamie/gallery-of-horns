@@ -1,7 +1,7 @@
 // 1. import React
 import React from 'react';
 // import component files that I want to use in App
-import Main from './Main.js';
+import Main from './Gallery.js';
 import Footer from './Footer.js'
 import Header from './Header.js'
 
