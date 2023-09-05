@@ -14,7 +14,7 @@ class Gallery extends React.Component {
       // create an instance of my Person component out of each pep and then I'm going to push it onto the people array
       // console.log(pep);
       beasts.push(<HornedBeast
-        idx={idx}
+        key={idx}
         imageURL={hornedB['image_url']}
         title={hornedB['title']}
         description={hornedB['description']}
