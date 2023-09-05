@@ -1,21 +1,40 @@
 import React from 'react';
-
-import ImgComp from './ImgComp.js';
+import './HornedBeast.css';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
 class HornedBeast extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      favorites: 0
+    };
+  }
+
+  countFaves= () => {
+    this.setState({ Favorites: this.state.favorites + 1 });
+  }
+
   render() {
 
-    const { imageUrl, altText, title , name, description, horns} = this.props;
+    const { imageURL, idx, title , description, keyword, horns} = this.props;
  
     return (
-      <article>
-        <h2>Horned Beast: {name}</h2>
-        <div>
-        <ImgComp imageUrl={imageUrl} altText={altText} title={title}/>
-        </div>
-
+      <article className="HornedBeast">
+        <Card style={{ width: '18rem' }}>
+        
+        <Card.Img variant="top" src={imageURL} alt={keyword} title={title} idx={idx}/>
+        <Card.Body>
+        <Card.Title>Horned Beast: {title}</Card.Title>
+        <Card.Text>
         <p>Description: {description}</p>
         <p>Horns: {horns}</p>
+        <Button variant="warning" onClick={this.countFaves}>Favorite this beast!</Button>
+        <span> ❤️ {this.state.favorites} Favorites</span>
+        </Card.Text>
+        </Card.Body>
+        </Card>
       </article>
     )
   }

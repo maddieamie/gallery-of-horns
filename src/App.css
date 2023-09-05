@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-color: rgb(178, 246, 208);
+}
+
+h1 {
+  font-size: 5vw;
+}
