@@ -17,23 +17,28 @@ Created the application.
 +Actual time needed to complete: 50 mins
 
 ## Feature 2
-Number and name of feature: Allow Users to Favorite Individual Beasts
++Number and name of feature: Allow Users to Favorite Individual Beasts
 
-Estimate of time needed to complete: 40 mins
++Estimate of time needed to complete: 40 mins
 
-Start time: 13:55
++Start time: 13:55
 
-Finish time: 12:21
++Finish time: 12:21
 
-Actual time needed to complete: 24 mins
++Actual time needed to complete: 24 mins
 
 ## Feature 3
-Number and name of feature: Bootstrap feature
++Number and name of feature: Bootstrap feature
 
-Estimate of time needed to complete: 20 mins
++Estimate of time needed to complete: 20 mins
 
-Start time: 2:21
++Start time: 2:21
 
-Finish time: 2:31
++Finish time: 2:31
 
-Actual time needed to complete: 10 mins
++Actual time needed to complete: 10 mins
+
+##TroubleShooting
+
+Start time: 2:35
+End time: 
