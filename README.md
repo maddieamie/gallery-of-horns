@@ -19,21 +19,21 @@ Created the application.
 ## Feature 2
 Number and name of feature: Allow Users to Favorite Individual Beasts
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 40 mins
 
-Start time: _____
+Start time: 13:55
 
-Finish time: _____
+Finish time: 12:21
 
-Actual time needed to complete: _____
+Actual time needed to complete: 24 mins
 
 ## Feature 3
-Number and name of feature: ________________________________
+Number and name of feature: Bootstrap feature
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 20 mins
 
-Start time: _____
+Start time: 2:21
 
-Finish time: _____
+Finish time: 2:31
 
-Actual time needed to complete: _____
+Actual time needed to complete: 10 mins
