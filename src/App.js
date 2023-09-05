@@ -4,10 +4,12 @@ import React from 'react';
 import Gallery from './Gallery.js';
 import Footer from './Footer.js'
 import Header from './Header.js'
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 
 // 2. declare the class
 class App extends React.Component {
+
 
   // We need to call a render function that will return our JSX 
   // (JSX is the stuff that looks like HTML)
@@ -18,8 +20,9 @@ class App extends React.Component {
     return (
       <>
         <Header />
+      
        <Gallery />
-       
+   
         <Footer />
       </>
     );

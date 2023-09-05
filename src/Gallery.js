@@ -10,6 +10,7 @@ class Gallery extends React.Component {
     let beasts = [];
     // iterate over the data array and create a Person component for each item in the array
     // each item in my data array I'm calling pep as I iterate over the data
+    
     data.forEach((hornedB, idx) => {
       // create an instance of my Person component out of each pep and then I'm going to push it onto the people array
       // console.log(pep);
