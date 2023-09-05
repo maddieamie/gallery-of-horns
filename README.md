@@ -38,7 +38,7 @@ Created the application.
 
 +Actual time needed to complete: 10 mins
 
-##TroubleShooting
+## TroubleShooting
 
-Start time: 2:35
-End time: 
+Extra 30 minutes. 
+Total lab time: ~ 2 hours.
