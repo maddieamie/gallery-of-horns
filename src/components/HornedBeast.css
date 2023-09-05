@@ -1,8 +1,27 @@
 .HornedBeast {
-    border: 2px dotted black;
     width: 24%;
-    padding: 1rem;
+    padding: 2rem;
     margin: 1rem;
   }
   
+
+
+  .HornedBeast img {
+    width: 80%;
+    margin: 5px;
+    padding: 10px;
+  }
+
+  .HornedBeast h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:larger;
+    padding-bottom: 10px;
+  }
+
+  .HornedBeast p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    padding: 3px;
+    
+  }
  

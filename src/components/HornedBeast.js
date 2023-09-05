@@ -3,6 +3,8 @@ import './HornedBeast.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+
 class HornedBeast extends React.Component {
 
   constructor(props) {
@@ -13,7 +15,7 @@ class HornedBeast extends React.Component {
   }
 
   countFaves= () => {
-    this.setState({ Favorites: this.state.favorites + 1 });
+    this.setState({ favorites: this.state.favorites + 1 });
   }
 
   render() {
@@ -22,11 +24,12 @@ class HornedBeast extends React.Component {
  
     return (
       <article className="HornedBeast">
-        <Card style={{ width: '18rem' }}>
+       
+        <Card border="warning" style={{ width: '18rem' }}>
         
         <Card.Img variant="top" src={imageURL} alt={keyword} title={title} idx={idx}/>
         <Card.Body>
-        <Card.Title>Horned Beast: {title}</Card.Title>
+        <Card.Title><h2>Horned Beast: {title}</h2></Card.Title>
         <Card.Text>
         <p>Description: {description}</p>
         <p>Horns: {horns}</p>
@@ -35,6 +38,8 @@ class HornedBeast extends React.Component {
         </Card.Text>
         </Card.Body>
         </Card>
+       
+  
       </article>
     )
   }
