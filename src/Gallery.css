@@ -1,0 +1,32 @@
+.gallery-container {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(200px, 1fr);
+    gap: 5px; 
+  }
+
+  .gallery-item {
+    
+    padding: 2rem;
+    margin: 1rem;
+  }
+
+  .gallery-item img {
+    
+        width: 80%;
+        margin: 5px;
+        padding: 10px;
+
+  }
+
+  h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:larger;
+    
+  }
+
+  p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    
+  }

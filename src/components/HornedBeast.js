@@ -1,8 +1,7 @@
 import React from 'react';
-import './HornedBeast.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-
+import CardGroup from 'react-bootstrap/CardGroup';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 class HornedBeast extends React.Component {
@@ -10,7 +9,8 @@ class HornedBeast extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      favorites: 0
+      favorites: 0,
+     
     };
   }
 
@@ -18,29 +18,43 @@ class HornedBeast extends React.Component {
     this.setState({ favorites: this.state.favorites + 1 });
   }
 
+ 
+
+  handleTitleClick = () => {
+    // handleShowModal is passed down from App
+    this.props.handleShowModal(this.props.title);
+    this.props.handleShowModal(this.props.imageURL);
+    this.props.handleShowModal(this.props.description);
+    this.props.handleShowModal(this.props.keyword);
+    
+  }
+
   render() {
 
     const { imageURL, idx, title , description, keyword, horns} = this.props;
  
     return (
-      <article className="HornedBeast">
+      
+      <CardGroup className="HornedBeast">
        
         <Card border="warning" style={{ width: '18rem' }}>
         
         <Card.Img variant="top" src={imageURL} alt={keyword} title={title} idx={idx}/>
         <Card.Body>
-        <Card.Title><h2>Horned Beast: {title}</h2></Card.Title>
+        <Card.Title><h2 onClick={this.handleTitleClick}>Horned Beast: {title}</h2></Card.Title>
         <Card.Text>
         <p>Description: {description}</p>
         <p>Horns: {horns}</p>
-        <Button variant="warning" onClick={this.countFaves}>Favorite this beast!</Button>
         <span> ❤️ {this.state.favorites} Favorites</span>
+        <Button variant="warning" onClick={this.countFaves}>Favorite this beast!</Button>
+        
         </Card.Text>
         </Card.Body>
         </Card>
        
   
-      </article>
+      </CardGroup>
+      
     )
   }
 }
