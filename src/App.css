@@ -44,3 +44,11 @@ body {
 h1 {
   font-size: 5vw;
 }
+
+.modal img {
+  height: 300px;
+  width: 300px;
+}
+.modal {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
