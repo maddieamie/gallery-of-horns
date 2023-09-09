@@ -8,7 +8,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Modal from 'react-bootstrap/Modal';
 import data from './data.json';
-import SelectedBeast from './components/SelectedBeast.js'
+import SelectedBeast from './components/SelectedBeast.js';
+import './App.css';
 
 
 
@@ -81,6 +82,8 @@ class App extends React.Component {
           show={this.state.isModalDisplaying}
           // onHide is the method that will change the value of our boolean (show)
           onHide={this.handleCloseModal}
+
+          className="modal"
         >
           <Modal.Header closeButton>
             <Modal.Title>Beast: {this.state.beastName}</Modal.Title>

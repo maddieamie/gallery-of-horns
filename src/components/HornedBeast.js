@@ -22,10 +22,8 @@ class HornedBeast extends React.Component {
 
   handleTitleClick = () => {
     // handleShowModal is passed down from App
-    this.props.handleShowModal(this.props.title);
-    this.props.handleShowModal(this.props.imageURL);
-    this.props.handleShowModal(this.props.description);
-    this.props.handleShowModal(this.props.keyword);
+    this.props.handleShowModal(this.props.title, this.props.imageURL, this.props.description, this.props.keyword);
+    
     
   }
 
