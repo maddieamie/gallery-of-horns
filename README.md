@@ -42,3 +42,18 @@ Created the application.
 
 Extra 30 minutes. 
 Total lab time: ~ 2 hours.
+
+# Lab 03
+
+## Feature 1
+
++Number and name of feature: Display modal
+
++Estimate of time needed to complete: 30 mins
+
++Start time: 2:45
+
++Finish time: 3:45 + later adjustments (15 minutes)
+
++Actual time needed to complete: ~2 hours
+
