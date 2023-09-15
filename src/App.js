@@ -57,23 +57,8 @@ class App extends React.Component {
     const selectedHorns = event.target.value;
     this.setState({ selectedHorns });
 
-    if (this.state.selectedHorns === '1') {
-      let newData= this.state.rawData.filter((hornedB) => hornedB.horns === parseInt(this.state.selectedHorns));
-      this.setState({filteredData: newData});
-    }
-
-    else if (this.state.selectedHorns === '2') {
-      let newData= this.state.rawData.filter((hornedB) => hornedB.horns === parseInt(this.state.selectedHorns));
-      this.setState({filteredData: newData});
-    }
-
-    else if (this.state.selectedHorns === '3') {
-      let newData= this.state.rawData.filter((hornedB) => hornedB.horns === parseInt(this.state.selectedHorns));
-      this.setState({filteredData: newData});
-    }
-
-    else if (this.state.selectedHorns === '100') {
-      let newData= this.state.rawData.filter((hornedB) => hornedB.horns === parseInt(this.state.selectedHorns));
+    if (selectedHorns === '1' || selectedHorns === '2' || selectedHorns === '3' || selectedHorns === '100') {
+      let newData= this.state.rawData.filter((hornedB) => hornedB.horns === parseInt(selectedHorns));
       this.setState({filteredData: newData});
     }
 
