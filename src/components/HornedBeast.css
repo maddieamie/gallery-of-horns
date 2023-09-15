@@ -1,0 +1,21 @@
+#lilcard {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 2px dotted rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+    align-items: center;
+}
+
+#textbox {
+    display: inline-grid;
+    justify-items: stretch;
+    padding: 5px;
+}

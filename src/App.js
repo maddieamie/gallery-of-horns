@@ -76,7 +76,6 @@ class App extends React.Component {
 
       <div id="nav">
         <Header 
-        favorites={this.state.favorites}
         />
        <Form>
        <Form.Select size="lg" value={this.state.selectedHorns} onChange={this.handleHornsChange} className="Dropdown" aria-label="Select Number of Horns">
@@ -93,7 +92,7 @@ class App extends React.Component {
        addFaves={this.addFaves}
        handleShowModal={this.handleShowModal}
        handleHornsChange={this.handleHornsChange}
-       filteredData={data}
+       filteredData={this.state.filteredData}
       
        />
       
