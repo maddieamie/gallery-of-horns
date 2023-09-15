@@ -45,6 +45,16 @@ h1 {
   font-size: 5vw;
 }
 
+.Dropdown {
+  position: relative;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: gold;
+  height: 50px;
+  width: 400px;
+  font-size: 35px;
+}
+
+
 .modal img {
   height: 300px;
   width: 300px;
