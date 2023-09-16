@@ -12,10 +12,10 @@
     align-content: stretch;
     justify-content: center;
     align-items: center;
+    padding-bottom: 40px;
 }
 
 #textbox {
     display: inline-grid;
-    justify-items: stretch;
     padding: 5px;
 }
