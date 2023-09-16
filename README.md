@@ -57,3 +57,17 @@ Total lab time: ~ 2 hours.
 
 +Actual time needed to complete: ~2 hours
 
+# Lab 04
+
+## Feature 1
+
++Number and name of feature: Filter by Numbers of Horns
+
++Estimate of time needed to complete: 60 mins
+
++Start time: 14:00 on Tuesday
+
++Finish time: 13:00 on Saturday
+
++Actual time needed to complete: 5-7 hours (too many)
+
