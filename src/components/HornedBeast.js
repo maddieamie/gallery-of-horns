@@ -1,4 +1,5 @@
 import React from 'react';
+import './HornedBeast.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
@@ -35,15 +36,15 @@ class HornedBeast extends React.Component {
       
       <CardGroup className="HornedBeast">
        
-        <Card border="warning" style={{ width: '18rem' }}>
+        <Card id="lilcard" border="warning" style={{ width: '18rem' }}>
         
-        <Card.Img variant="top" src={imageURL} alt={keyword} title={title} idx={idx}/>
+        <Card.Img variant="top" onClick={this.handleTitleClick} src={imageURL} alt={keyword} title={title} idx={idx}/>
         <Card.Body>
         <Card.Title><h2 onClick={this.handleTitleClick}>Horned Beast: {title}</h2></Card.Title>
-        <Card.Text>
+        <Card.Text id="textbox">
         <p>Description: {description}</p>
         <p>Horns: {horns}</p>
-        <span> ❤️ {this.state.favorites} Favorites</span>
+        <p><span id="faves"> ❤️ {this.state.favorites} Favorites</span></p>
         <Button variant="warning" onClick={this.countFaves}>Favorite this beast!</Button>
         
         </Card.Text>

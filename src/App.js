@@ -5,7 +5,7 @@ import Gallery from './Gallery.js';
 import Footer from './Footer.js'
 import Header from './Header.js'
 import 'bootstrap/dist/css/bootstrap.min.css'; 
-
+import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 import data from './data.json';
 import SelectedBeast from './components/SelectedBeast.js';
@@ -24,7 +24,10 @@ class App extends React.Component {
       beastName: '',
       beastImg: '',
       beastDes: '',
-      keyword:  ''
+      keyword:  '',
+      selectedHorns: '',
+      rawData: data,
+      filteredData: data
     }
   }
 
@@ -50,29 +53,47 @@ class App extends React.Component {
       isModalDisplaying: false
     });
   }
+  handleHornsChange = (event) => {
+    const selectedHorns = event.target.value;
+    this.setState({ selectedHorns });
+
+    if (selectedHorns === '1' || selectedHorns === '2' || selectedHorns === '3' || selectedHorns === '100') {
+      let newData= this.state.rawData.filter((hornedB) => hornedB.horns === parseInt(selectedHorns));
+      this.setState({filteredData: newData});
+    }
+
+    else {
+    this.setState({filteredData: this.state.rawData});
+  }
+  };
 
 
 
-
-  // We need to call a render function that will return our JSX 
-  // (JSX is the stuff that looks like HTML)
   render() {
-    // is called a "Frag" or fractional element
-    //  the <> allows use to use multiple tags as siblings
-    // it will not render on our page
+
     return (
       <>
 
-      
+      <div id="nav">
         <Header 
-        favorites={this.state.favorites}
         />
-       
-      
+       <Form>
+       <Form.Select size="lg" value={this.state.selectedHorns} onChange={this.handleHornsChange} className="Dropdown" aria-label="Select Number of Horns">
+        <option value="all">All Beasts</option>
+        <option value="1">One Horn</option>
+        <option value="2">Two Horns</option>
+        <option value="3">Three Horns</option>
+        <option value="100">One Hundred Horns</option>
+      </Form.Select>
+      </Form>
+      </div>
+
        <Gallery 
        addFaves={this.addFaves}
        handleShowModal={this.handleShowModal}
-       data={data}
+       handleHornsChange={this.handleHornsChange}
+       filteredData={this.state.filteredData}
+      
        />
       
         <Footer />
