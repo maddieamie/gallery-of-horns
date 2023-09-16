@@ -42,9 +42,9 @@ class HornedBeast extends React.Component {
         <Card.Body>
         <Card.Title><h2 onClick={this.handleTitleClick}>Horned Beast: {title}</h2></Card.Title>
         <Card.Text id="textbox">
-        <p>Description: {description}</p>
-        <p>Horns: {horns}</p>
-        <p><span id="faves"> ❤️ {this.state.favorites} Favorites</span></p>
+        <span>Description: {description}</span>
+        <span>Horns: {horns}</span>
+        <span id="faves"> ❤️ {this.state.favorites} Favorites</span>
         <Button variant="warning" onClick={this.countFaves}>Favorite this beast!</Button>
         
         </Card.Text>
